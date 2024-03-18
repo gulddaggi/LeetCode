@@ -27,46 +27,13 @@ int main()
 
 	std::cout << '\n';
 
-	int end = nums.size();
-
-	for (int i = 0; i < nums.size(); i++)
+	int left = 0;
+	for (int right = 0; right < nums.size(); right++)
 	{
-		if (i > 0 && nums[i-1] == 0)
+		if (nums[right] != 0)
 		{
-			--i;
+			std::swap(nums[left], nums[right]);
+			++left;
 		}
-
-		if (nums[i] == 0)
-		{
-			for (int j = i; j < end-1; j++)
-			{
-				std::cout << j << "와 " << j + 1 << " 인덱스 교환\n";
-				int tmp = nums[j+1];
-				nums[j+1] = nums[j];
-				nums[j] = tmp;
-			}
-
-			std::cout << "정렬 결과 :";
-			for (int j = 0; j < nums.size(); j++)
-			{
-				std::cout << nums[j] << ' ';
-			}
-			std::cout << '\n';
-
-			--end;
-		}
-
-		std::cout << "정렬 결과 :";
-		for (int j = 0; j < nums.size(); j++)
-		{
-			std::cout << nums[j] << ' ';
-		}
-		std::cout << '\n';
-
-		if (end == 0)
-		{
-			break;
-		}
-
 	}
 }
