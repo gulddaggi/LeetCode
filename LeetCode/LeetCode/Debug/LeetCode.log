@@ -1,0 +1,4 @@
+﻿  solution.cpp
+C:\Users\MSI\Documents\GitHub\LeetCode\LeetCode\LeetCode\solution.cpp(20,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\MSI\Documents\GitHub\LeetCode\LeetCode\LeetCode\solution.cpp(53,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  LeetCode.vcxproj -> C:\Users\MSI\Documents\GitHub\LeetCode\LeetCode\Debug\Problem.exe
